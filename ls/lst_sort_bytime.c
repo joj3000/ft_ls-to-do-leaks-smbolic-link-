@@ -6,16 +6,16 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/14 15:40:05 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 15:30:59 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/21 09:48:46 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 
-void	correct_sort(p_lst *list)
+static void		correct_sort(t_lst *list)
 {
-	p_lst	*i;
-	p_lst	*j;
+	t_lst	*i;
+	t_lst	*j;
 
 	i = list;
 	while (i->next != NULL)
@@ -27,10 +27,10 @@ void	correct_sort(p_lst *list)
 	}
 }
 
-void	lst_sort_bytime(p_lst *list)
+void			lst_sort_bytime(t_lst *list)
 {
-	p_lst	*i;
-	p_lst	*j;
+	t_lst	*i;
+	t_lst	*j;
 	int		flag;
 
 	flag = 1;
@@ -84,8 +84,7 @@ void	lst_sort_bytime(p_lst *list)
 **	list->mtime = s;
 **	toaddt->mtime = t;
 **	toaddu->mtime = u;
-*	toaddv->mtime = v;
-**	
+**	toaddv->mtime = v;
 **	lst_pushback(list, toaddt);
 **	lst_pushback(list, toaddu);
 **	lst_pushback(list, toaddv);

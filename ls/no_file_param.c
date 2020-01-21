@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_blocksize_l.c                                :+:      :+:    :+:   */
+/*   no_file_param.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/17 20:35:25 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/20 22:03:49 by jerbs            ###   ########.fr       */
+/*   Created: 2020/01/20 19:54:50 by jerbs             #+#    #+#             */
+/*   Updated: 2020/01/20 19:55:08 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 
-long int	print_blocksize_l(t_lst *list)
+int	no_file_param(int ac, char **av)
 {
-	long int count;
+	int i;
 
-	count = 0;
-	while (list)
+	i = 0;
+	while (i != ac)
 	{
-		if (!(list->name[0] == '.'))
-			count += list->blocks;
-		list = list->next;
+		if (!(av[i][0] == '-'))
+			return (0);
+		i++;
 	}
-	write(1, "total ", 6);
-	ft_putllnbr(count);
-	write(1, "\n", 1);
-	return (count);
+	return (1);
 }

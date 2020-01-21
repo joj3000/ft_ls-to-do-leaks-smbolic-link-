@@ -6,13 +6,13 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/14 16:11:22 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 15:34:26 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 21:57:30 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 
-void	lst_print_name(p_lst *list, char *options, int xfiles)
+void	lst_print_name(t_lst *list, char *options, int xfiles)
 {
 	if (is_in(options, 'R') == 0)
 		if (xfiles >= 2)

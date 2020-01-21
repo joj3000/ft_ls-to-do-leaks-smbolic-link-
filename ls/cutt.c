@@ -6,7 +6,7 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/19 15:07:17 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 15:37:54 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 22:08:39 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*cutt(char *old)
 {
-	char 	*new;
+	char	*new;
 	int		i;
 	int		j;
 
@@ -33,9 +33,13 @@ char	*cutt(char *old)
 /*
 **int main()
 **{
+**	while (1){
 **	char *old;
+**	char *s;
 **	old = "Sun Jan 12 12:06:30 2020";
 **
-**	printf("%s\n", cutt(old));
+**	printf("%s\n", s = cutt(old));
+**	free(s);
+**	}
 **}
 */

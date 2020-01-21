@@ -6,7 +6,7 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/14 16:39:56 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 18:10:17 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 22:06:44 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int		is_option(int ac, char **av, char o)
 		i = 0;
 		ac--;
 	}
-	return(0);
+	return (0);
 }
 
 char	*add_options(char *s, char *options)
@@ -42,18 +42,24 @@ char	*add_options(char *s, char *options)
 	if (is_in(s, 'R') == 1)
 		options = strjoin_free1(options, "R");
 	if (is_in(s, 'r') == 1)
-		options	= strjoin_free1(options, "r");
+		options = strjoin_free1(options, "r");
 	if (is_in(s, 'a') == 1)
-		options	= strjoin_free1(options, "a");
+		options = strjoin_free1(options, "a");
 	if (is_in(s, 't') == 1)
-		options	= strjoin_free1(options, "t");
+		options = strjoin_free1(options, "t");
 	return (options);
 }
 
 /*
 **#include <stdio.h>
-**int main(int ac, char **av)
+**int main()
 **{
-**	printf("%d\n", is_option(ac, av, 'o'));
-**}
+**	while (1){
+**		char *s;
+**		char *options;
+**		options = ft_strdup("0");
+**		s = "0lRrat";
+**		options = add_options(s, options);
+**		free(options);
+**}}
 */

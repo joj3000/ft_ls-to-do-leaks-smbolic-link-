@@ -6,13 +6,13 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/12 10:23:32 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 16:02:30 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 22:09:29 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 
-void	lst_pushback(p_lst *list, p_lst *toadd)
+void	lst_pushback(t_lst *list, t_lst *toadd)
 {
 	while (list->next != NULL)
 		list = list->next;
@@ -31,13 +31,13 @@ void	lst_pushback(p_lst *list, p_lst *toadd)
 **	t = ft_strdup("yoyo");
 **
 **	toadd = lst_newname(t);
-*	list = lst_newname(s);
+**	list = lst_newname(s);
 **
 **	lst_pushback(list, toadd);
 **		while (list)
 **		{
 **		printf("%s\n", list->name);
-*			list = list->next;
+**			list = list->next;
 **		}
 **
 **

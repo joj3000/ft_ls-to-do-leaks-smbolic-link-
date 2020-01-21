@@ -6,16 +6,16 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/14 16:05:48 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 16:26:33 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 21:59:33 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 
-void	lst_sort_revtime(p_lst *list)
+void	lst_sort_revtime(t_lst *list)
 {
-	p_lst	*i;
-	p_lst	*j;
+	t_lst	*i;
+	t_lst	*j;
 	int		flag;
 
 	flag = 1;
@@ -37,10 +37,10 @@ void	lst_sort_revtime(p_lst *list)
 	}
 }
 
-void	lst_sort_revname(p_lst *list)
+void	lst_sort_revname(t_lst *list)
 {
-	p_lst	*i;
-	p_lst	*j;
+	t_lst	*i;
+	t_lst	*j;
 	int		flag;
 
 	flag = 1;
@@ -62,7 +62,7 @@ void	lst_sort_revname(p_lst *list)
 	}
 }
 
-void	lst_sort_rev(p_lst *list, char *options)
+void	lst_sort_rev(t_lst *list, char *options)
 {
 	if (is_in(options, 't') == 1)
 		lst_sort_revtime(list);

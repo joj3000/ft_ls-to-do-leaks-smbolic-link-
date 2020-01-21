@@ -6,7 +6,7 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/19 12:22:07 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 16:30:25 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 13:20:58 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,16 @@ char	*strjoin_free(char *s1, char *s2, char *tmp)
 **#include <stdio.h>
 **int main()
 **{
+**	while (1){
 **	char s1[] = "ceci est un ";
 **	char s2[] = "test !";
-**
-**	printf("%s", ft_strjoin(s1, s2));
+**	char *s3;
+**	char *tmp;
+***	tmp = malloc(sizeof(char ) + 1);
+**	tmp[0] = '1';
+**	tmp[1] = 0;
+**	s3 = strjoin_free(s1, s2, tmp);
+**	free(s3);
+**}
 **}
 */

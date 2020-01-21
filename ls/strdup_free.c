@@ -6,7 +6,7 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/19 12:07:16 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 16:27:57 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 13:13:27 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,12 @@ char		*strdup_free(char *s1)
 /*
 **int main()
 **{
-**	char s1[] = "hello";
-**	printf("%s\n", ft_strdup(s1));
+**	while (1){
+**	char *s1;
+** s1	   = ft_strdup("hello");
+**	char *s2;
+**	printf("%s\n", s2 = strdup_free(s1));
+**	free(s2);
+**}
 **}
 */

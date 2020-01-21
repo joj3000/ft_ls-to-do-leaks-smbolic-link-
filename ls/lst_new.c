@@ -6,17 +6,17 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/12 22:07:30 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 19:05:52 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/21 09:49:49 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 
-p_lst	*lst_new(p_dirent *dp, p_stat *stats)
+t_lst	*lst_new(t_dirent *dp, t_stat *stats)
 {
-	p_lst *list;
+	t_lst *list;
 
-	if (!(list = (p_lst *)malloc(sizeof(p_lst))))
+	if (!(list = (t_lst *)malloc(sizeof(t_lst))))
 		return (NULL);
 	list->type = file_type(stats->st_mode);
 	list->permi = permi_conv(stats->st_mode);

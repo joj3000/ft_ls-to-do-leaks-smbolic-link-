@@ -6,21 +6,21 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/13 12:43:24 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 21:01:36 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 22:15:02 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 
-char		*dup_sp_free(char *s1, int nb)    
+char		*dup_sp_free(char *s1, int nb)
 {
 	char	*str;
 	int		i;
 	int		j;
 	int		count;
 
-	count =  nb - ft_strln(s1);
-	if (!(str = malloc(sizeof(char) * (nb + 1))))
+	count = nb - ft_strln(s1);
+	if (!(str = malloc(sizeof(char) * nb + 1)))
 		return (NULL);
 	i = 0;
 	while (count != 0)
@@ -44,8 +44,12 @@ char		*dup_sp_free(char *s1, int nb)
 /*
 **int main()
 **{
+**	while(1){
 **	char *s1;
+**	char *s2;
 **	s1 = ft_strdup("hello");
-**	printf("%s\n", dup_sp_free(s1, 10));
+**	printf("%s\n", s2 = dup_sp_free(s1, 10));
+**	free(s2);
+**	}
 **}
 */

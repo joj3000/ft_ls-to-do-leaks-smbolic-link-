@@ -6,7 +6,7 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 14:52:31 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 16:29:35 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 12:04:48 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char		*ft_strdup(char *s1)
 	int		i;
 
 	i = ft_strln(s1);
-	if (!(str = malloc(sizeof(*str) * (i + 1))))
+	if (!(str = malloc(sizeof(*str) * i + 1)))
 		return (NULL);
 	i = 0;
 	while (s1[i] != '\0')

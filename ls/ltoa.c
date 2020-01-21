@@ -6,7 +6,7 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/12 19:13:36 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/12 19:13:59 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 21:33:52 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,8 +59,8 @@ static void		modulo_put_in_str(long int n, char *str,
 
 char			*ltoa(long int n)
 {
-	char				*str_base;
-	char				*str;
+	char			*str_base;
+	char			*str;
 	long int		index;
 	long int		end;
 
@@ -86,9 +86,9 @@ char			*ltoa(long int n)
 }
 
 /*
-#include <stdio.h>
-int main()
-{
-	printf("%s", ltoa(-4294967295));
-}
+**#include <stdio.h>
+**int main()
+**{
+**	printf("%s", ltoa(-4294967295));
+**}
 */

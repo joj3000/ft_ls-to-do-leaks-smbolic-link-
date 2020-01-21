@@ -6,7 +6,7 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/19 16:18:07 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 16:28:24 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 13:22:12 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*strjoin_free1(char *s1, char *s2)
 	if (!s1 || !s2)
 		return (NULL);
 	if (!(str = (char *)malloc(sizeof(char) *
-	(ft_strln(s1) + ft_strln(s2) + 1))))
+	(ft_strln(s1) + ft_strln(s2)) + 1)))
 		return (NULL);
 	i = 0;
 	k = 0;

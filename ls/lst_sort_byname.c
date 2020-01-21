@@ -6,16 +6,16 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/19 15:25:45 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 15:29:36 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 21:58:24 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 
-void	lst_sort_byname(p_lst *list)
+void	lst_sort_byname(t_lst *list)
 {
-	p_lst	*i;
-	p_lst	*j;
+	t_lst	*i;
+	t_lst	*j;
 	int		flag;
 
 	flag = 1;
@@ -62,7 +62,6 @@ void	lst_sort_byname(p_lst *list)
 **	lst_pushback(list, toaddt);
 **	lst_pushback(list, toaddu);
 **	lst_pushback(list, toaddv);
-**	
 **	lst_sort(list);
 **
 **	lst_print(list);

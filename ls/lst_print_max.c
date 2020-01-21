@@ -6,32 +6,32 @@
 /*   By: jerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/17 20:25:35 by jerbs             #+#    #+#             */
-/*   Updated: 2020/01/19 21:01:45 by jerbs            ###   ########.fr       */
+/*   Updated: 2020/01/20 21:57:12 by jerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 
-static void	print_shit(p_lst *list)
+static void	print_shit(t_lst *list)
 {
-		putstr(list->type);
-		putstr(list->permi);
-		putstr("  ");
-		putstr(list->links);
-		putstr(" ");
-		putstr(list->user);
-		putstr("  ");
-		putstr(list->group);
-		putstr("  ");
-		putstr(list->size);
-		putstr(" ");
-		putstr(list->tmodif);
-		putstr(" ");
-		putstr(list->name);
-		putstr("\n");
+	putstr(list->type);
+	putstr(list->permi);
+	putstr("  ");
+	putstr(list->links);
+	putstr(" ");
+	putstr(list->user);
+	putstr("  ");
+	putstr(list->group);
+	putstr("  ");
+	putstr(list->size);
+	putstr(" ");
+	putstr(list->tmodif);
+	putstr(" ");
+	putstr(list->name);
+	putstr("\n");
 }
 
-void		lst_print_max(p_lst *list, char *options, int xfiles)
+void		lst_print_max(t_lst *list, char *options, int xfiles)
 {
 	links_sp_updt(list);
 	size_sp_updt(list);
